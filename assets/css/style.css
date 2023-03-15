@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.main_animation{
+    position: relative;
+    overflow: hidden;
+    height: 650px;
+  
+}
+.main_animation div{
+    position: absolute;
+}
+.bg{
+    width: 100%;
+    height: 650px;
+   background-image: url("./img/backround\ img.jfif");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+}
+.logo{
+    width: 250px;
+    height: 200px;
+    background-image: url("./img/kindergarden\ logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 50%;
+    top: -300px;
+    transform: translateX(-50%);
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes logo {
+    from{
+        top: -300px;
+    }
+    to{
+        top: 100px;
+    }
+}
+.boy_girl{
+width: 300px;
+height: 250px;
+background-image: url("./img/children.jpg");
+background-repeat: no-repeat;
+background-size: contain;
+position: absolute;
+left: 90%;
+bottom: -300px;
+transform: translateX(-50%);
+animation-name: children;
+animation-duration: 2s;
+animation-delay: 2s;
+animation-fill-mode: forwards;
+}
+@keyframes children{
+    from{
+        bottom: -300px;
+    }
+    to{
+        bottom: 50px;
+    }
+}
+.ball{
+    width: 100px;
+    height: 100px;
+    background-image: url("./img/ball.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    bottom: 25px;
+    right: -400px;
+    animation-name: ball;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+
+}
+@keyframes ball{
+    from{
+        right: -400px
+    }
+    to{
+        right: 100%;
+    }
+}
